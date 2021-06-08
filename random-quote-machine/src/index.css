@@ -7,18 +7,62 @@
     padding: 0;
 }
 
-main{
+body {
     background: url("./assets/img/Library.jpg") no-repeat fixed center;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* url: https://miro.medium.com/max/11914/0*ZQJRryxWCxq9H5I3   */
 }
 
+.container {
+  background-color: #fff;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 blockquote {
-    background-color: #fff;
+  margin-bottom: 20px;
 }
 
-p {
-    font-family: 'Caveat', cursive;
-    font-size: 30px;
+#text {
+  margin-top: 10px;
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
 }
+
+#author {
+  margin-top: 10px;
+  margin-left: 90px;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgb(226, 225, 225);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color:rgb(255, 255, 255)
+}
+
+#tweet-quote {
+  text-decoration: none;
+  margin-top: 15px;
+  color:rgb(69, 1, 146)
+}
+
