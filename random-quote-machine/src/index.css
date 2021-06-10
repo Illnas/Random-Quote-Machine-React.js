@@ -1,68 +1,73 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Dancing+Script:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Dancing+Script:wght@700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background: url("./assets/img/Library.jpg") no-repeat fixed center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* url: https://miro.medium.com/max/11914/0*ZQJRryxWCxq9H5I3   */
+  background: url("./assets/img/Library.jpg") no-repeat fixed center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* url: https://miro.medium.com/max/11914/0*ZQJRryxWCxq9H5I3   */
 }
 
 .container {
   background-color: #fff;
-  width: 400px;
-  height: 200px;
+  width: 500px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-blockquote {
-  margin-bottom: 20px;
 }
 
 #text {
   margin-top: 10px;
-  font-family: 'Caveat', cursive;
-  font-size: 30px;
+  padding: 20px;
+  height: 80px;
+  font-family: "Caveat", cursive;
+  font-size: 20px;
 }
 
-#author {
-  margin-top: 10px;
-  margin-left: 90px;
-}
-
-.btns {
+.quote-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
+
+
 
 .btn {
+  margin-top: 70px;
   width: 150px;
   height: 50px;
+  border: 2px solid rgb(129, 129, 129);
   border-radius: 5px;
-  background-color: rgb(226, 225, 225);
+  background-color: rgb(250, 248, 136);
 }
 
-.btn:hover {
+.btn:hover, .btn:active {
   cursor: pointer;
-  background-color:rgb(255, 255, 255)
+  border: 2px solid rgb(5, 5, 5);
+  background-color: rgba(252, 181, 181, 0.692);
 }
 
 #tweet-quote {
-  text-decoration: none;
-  margin-top: 15px;
-  color:rgb(69, 1, 146)
+  margin-top: 30px;
+  color: rgb(0, 0, 0);
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .container {
+    width: 300px;
+    height: 450px
+  }
+
+  #text {
+    height: 150px 
+  }
+}
